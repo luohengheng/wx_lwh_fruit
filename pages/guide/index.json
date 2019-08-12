@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-guideLoad": "/components/load/index",
+    "l-content": "/components/guide/content/index"
+  }
+}

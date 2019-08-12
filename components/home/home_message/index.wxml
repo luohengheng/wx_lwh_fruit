@@ -1,0 +1,3 @@
+<i-notice-bar icon="systemprompt" loop speed="2000" bind:tap="msgInfo">
+    {{msg}}
+</i-notice-bar>

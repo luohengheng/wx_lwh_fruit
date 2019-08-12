@@ -1,0 +1,8 @@
+.swiper_container{
+  width: 100vw;
+}
+
+.s_contianer_img{
+  width: 100vw;
+  height: 300rpx;
+}

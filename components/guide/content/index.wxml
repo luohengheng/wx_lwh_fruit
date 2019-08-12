@@ -1,0 +1,19 @@
+
+<view class="guide-container">
+  <image src="images/title8.png" class="yiqiImage"/>
+  <view class="guide-container-bottom">
+    <view class="guide-container-animoation">
+      <image src="images/wave.png" class="gc-anim-wave"/>
+      <image src="images/wave.png" class="gc-anim-wave wave-bg"/>
+    </view>
+  
+    <view class="guide-container-pro">
+      <image class="gc-bottom-title" src="images/confirm-word1.png" />
+      <i-button class="gc-bottom-btn" bind:tap="goHome"
+      type="success" shape="circle">进入店铺
+        <i-icon type="enter" size="16" color="white" /> 
+      </i-button>
+      <text>© 2019 lwh 倾情巨献</text>
+    </view>
+  </view>
+</view>

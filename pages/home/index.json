@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "l-home-message": "/components/home/home_message/index",
+    "l-home-swiper": "/components/swipe/index",
+    "l-home-rec-item": "/components/home/home_recommed/index"
+  }
+}

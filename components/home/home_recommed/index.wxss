@@ -1,0 +1,67 @@
+.recommed_container{
+  width: 100vw;
+  display: flex;
+  border-top: 1rpx solid #99999934; 
+  border-bottom: 1rpx solid #99999934; 
+}
+
+.rec_cont_left{
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.rec_cont_right{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+
+.cont_right_title{
+  font-size: 30rpx;
+  line-height: 30rpx;
+  padding-left: 20rpx;
+}
+
+.cont_right_money{
+  display: flex;
+  flex-direction: row;
+}
+
+.right_money_cur{
+  font-size: 26rpx;
+  color: red;
+  margin-right: 20rpx;
+}
+
+.right_money_old{
+  font-size: 24rpx;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.cont_right_bottom{
+  display: flex;
+}
+
+.right_bottom_btn{
+  font-size: 20rpx;
+  color: red;
+  border: 1rpx solid red;
+  padding: 5rpx 10rpx;
+}
+
+.right_bottom_content{
+  display: flex;
+  margin-left: 50rpx;
+}
+
+.bot_cont_text{
+  display: flex;
+  align-items: center;
+  font-size: 20rpx;
+  color: #666666;
+  margin-right: 30rpx;
+}
+

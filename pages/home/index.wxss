@@ -1,0 +1,12 @@
+
+.home_message{
+  width: 100vw;
+}
+
+.home_recommend_text{
+  width: 100vw;
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  padding: 30rpx 0;
+}

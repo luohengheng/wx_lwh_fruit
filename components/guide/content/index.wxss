@@ -1,0 +1,80 @@
+
+.guide-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative
+}
+
+.yiqiImage{
+  width: 600rpx;
+  height: 200rpx;
+  margin-top: 40rpx;
+}
+
+
+.guide-container-bottom{
+  width: 100vw;
+  height: 65vh;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255, 255, 0.75);
+}
+
+.guide-container-animoation{
+  position: absolute;
+  top:-100rpx;
+  width: 100vw;
+}
+
+.gc-anim-wave{
+  position: absolute;
+  z-index: 3;
+  opacity: 0.75;
+  height: 260rpx;
+  width: 2250rpx;
+  animation: wave 10s linear infinite alternate;
+
+}
+
+.wave-bg{
+  position: absolute;
+  z-index: 2;
+  animation: wave-bg 10.25s  linear infinite ;
+}
+
+@keyframes wave{
+  from {transform: translateX(-825rpx);}
+  to {transform:  translateX(-25rpx);}
+}
+
+@keyframes wave-bg{
+  from {transform: translateX(-855rpx);}
+  to {transform:  translateX(-475rpx);}
+}
+
+.guide-container-pro{
+  width: 100vw;
+  height: 65vh;
+  position: relative;
+  z-index: 10;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gc-bottom-title{
+  width: 600rpx;
+  height: 200rpx;
+  margin-top: 130rpx;
+}
+
+.gc-bottom-btn{
+  margin: 125rpx 0 150rpx 0;
+}

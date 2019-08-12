@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/guide/index",
+    "pages/home/index",
+    "pages/recommed/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#00afb4",
+    "backgroundColor": "#00afb4"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#00afb4",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 4px 0",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "images/tab/select-off.png",
+        "selectedIconPath": "images/tab/select-on.png",
+        "text": "精选"
+      },{
+        "pagePath": "pages/recommed/index",
+        "iconPath": "images/tab/classification-off.png",
+        "selectedIconPath": "images/tab/classification-on.png",
+        "text": "分类"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

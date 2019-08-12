@@ -1,0 +1,8 @@
+<swiper wx:if="true" class="swiper_container" vertical="true" autoplay="true"
+ circular="true" interval="3000">
+      <navigator wx:for="{{swiperArr}}" wx:key="id" open-type="navigate">
+        <swiper-item>
+          <image src="{{item.shuffle_figure}}" class="s_contianer_img"/>
+        </swiper-item>
+      </navigator>
+</swiper>

@@ -1,0 +1,12 @@
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: -webkit-linear-gradient(top,
+   rgba(0,175,180, 1),
+    rgba(0,175,180, 0.1));
+}

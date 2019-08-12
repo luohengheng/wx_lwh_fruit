@@ -1,0 +1,6 @@
+<view class="container">
+  <l-guideLoad wx:if="{{isGudieShow}}"/>
+  <block wx:else>
+    <l-content />
+  </block>
+</view>

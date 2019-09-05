@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "l-rec-header": "/components/recommend/rec_header/index",
+    "l-rec-content": "/components/recommend/rec_content/index"
+  }
 }

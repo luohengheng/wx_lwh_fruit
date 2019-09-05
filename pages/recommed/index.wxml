@@ -1,2 +1,4 @@
-<!--pages/recommed/index.wxml-->
-<text>pages/recommed/index.wxml</text>
+<view class="rec_container">
+  <l-rec-header/>
+  <l-rec-content class='l_rec_content' recList="{{recList}}"/>
+</view>

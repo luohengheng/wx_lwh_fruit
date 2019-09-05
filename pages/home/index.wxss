@@ -10,3 +10,7 @@
   line-height: 36rpx;
   padding: 30rpx 0;
 }
+
+.home_recommend_list{
+  width: 100%;
+}

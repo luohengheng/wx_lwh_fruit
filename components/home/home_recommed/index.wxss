@@ -1,5 +1,5 @@
 .recommed_container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   border-top: 1rpx solid #99999934; 
   border-bottom: 1rpx solid #99999934; 

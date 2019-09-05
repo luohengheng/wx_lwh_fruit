@@ -1,18 +1,29 @@
 // pages/recommed/index.js
+let RecommendModel = require('../../models/recommend.js')
+const recModel = new RecommendModel()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    recList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.init()
+  },
 
+  init: async function () {
+    const recList = await recModel.getRecommendList()
+
+    this.setData({
+      recList
+    })
   },
 
   /**

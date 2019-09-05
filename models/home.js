@@ -31,6 +31,10 @@ class HomeModel extends HTTP {
     const { data = [] } = await this.request({
       url: '/getHomeBanner',
       method: 'POST',
+      data: {
+        pageSize: 1,
+        pageNum: 6
+      }
     })
   
     return data

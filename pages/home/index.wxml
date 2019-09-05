@@ -1,6 +1,6 @@
 <l-home-message class="home_message" msg="{{msgInfo}}"/>
 <l-home-swiper swiperArr="{{swiperArr}}" isShow="{{bannerArr.length > 0}}"/>
 <text class="home_recommend_text">特别推荐</text>
-<view wx:for="{{bannerArr}}">
+<view wx:for="{{bannerArr}}" class="home_recommend_list">
   <l-home-rec-item bannerItem="{{item}}" wx:key="{{item.id}}"/>
 </view>

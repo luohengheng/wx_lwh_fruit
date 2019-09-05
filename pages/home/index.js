@@ -17,21 +17,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
-    const msgArr = await homeModel.getHomeMsg()
-    const swiperArr = await homeModel.getHomeSwipe()
-    const bannerArr = await homeModel.getHomeBanner()
-    console.error('aaaaa', bannerArr)
+    this.init()
+  },
 
-    let msgStr = ''
-    msgArr.forEach((item, index) => {
-      msgStr += `通知 : ${item.message} `
-    })
+  init: async function () {
+      const msgArr = await homeModel.getHomeMsg()
+      const swiperArr = await homeModel.getHomeSwipe()
+      const bannerArr = await homeModel.getHomeBanner()
 
-    this.setData({
-      msgInfo: msgStr,
-      swiperArr,
-      bannerArr
-    })
+      let msgStr = ''
+      msgArr.forEach((item, index) => {
+          msgStr += `通知 : ${item.message} `
+      })
+
+      this.setData({
+          msgInfo: msgStr,
+          swiperArr,
+          bannerArr
+      })
   },
 
   /**
@@ -66,7 +69,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+      this.init()
   },
 
   /**

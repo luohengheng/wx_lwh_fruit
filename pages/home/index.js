@@ -17,6 +17,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    wx.showLoading({
+      title: '加载中...',
+    })
     this.init()
   },
 
@@ -35,6 +38,11 @@ Page({
           swiperArr,
           bannerArr
       })
+
+      wx.hideLoading()
+      wx.hideNavigationBarLoading()
+      // 隐藏下拉加载状态
+      wx.stopPullDownRefresh()
   },
 
   /**
@@ -69,14 +77,24 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-      this.init()
+    wx.showNavigationBarLoading()
+    this.init()
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    // wx.stopPullDownRefresh()
+    // wx.showNavigationBarLoading()
 
+    // const { bannerArr } = this.data
+    // const newBannerArr = await homeModel.getHomeBanner()
+    // this.setData({
+    //   bannerArr: [...bannerArr, ...newBannerArr]
+    // })
+
+    // wx.hideNavigationBarLoading()
   },
 
   /**

@@ -49,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -69,6 +69,21 @@
 					"id": -1,
 					"name": "pages/recommed/index",
 					"pathName": "pages/recommed/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/index",
+					"pathName": "pages/me/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/f_detail/index",
+					"pathName": "pages/f_detail/index",
+					"query": "id=1",
 					"scene": null
 				}
 			]

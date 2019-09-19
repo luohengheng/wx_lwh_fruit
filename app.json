@@ -2,16 +2,17 @@
   "pages": [
     "pages/guide/index",
     "pages/home/index",
-    "pages/recommed/index"
+    "pages/recommed/index",
+    "pages/me/index",
+    "pages/cart/index",
+    "pages/f_detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#00afb4",
-    "backgroundColor": "#00afb4",
-    "enablePullDownRefresh": true,
-    "onReachBottomDistance": 50
+    "backgroundColor": "#00afb4"
   },
   "tabBar": {
     "color": "#929292",
@@ -25,11 +26,24 @@
         "iconPath": "images/tab/select-off.png",
         "selectedIconPath": "images/tab/select-on.png",
         "text": "精选"
-      },{
+      },
+      {
         "pagePath": "pages/recommed/index",
         "iconPath": "images/tab/classification-off.png",
         "selectedIconPath": "images/tab/classification-on.png",
         "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "iconPath": "images/tab/cart-off.png",
+        "selectedIconPath": "images/tab/cart-on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "iconPath": "images/tab/my-off.png",
+        "selectedIconPath": "images/tab/my-on.png",
+        "text": "我的"
       }
     ]
   },

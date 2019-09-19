@@ -1,16 +1,21 @@
-<view class="recommed_container" bannerItem="{{bannerItem}}">
-  <image src="{{bannerItem.image_url}}" class="rec_cont_left"/>
-  <view class="rec_cont_right">
-    <text class="cont_right_title">{{bannerItem.name}}</text>
-    <view class="cont_right_money">
-      <text class="right_money_cur">¥ {{bannerItem.cur_price}}</text>
-      <text class="right_money_old">¥ {{bannerItem.price}}</text>
-    </view>
-    <view class="cont_right_bottom">
-      <view class="right_bottom_btn">已售{{bannerItem.sold_nums}}份</view>
-      <view class="right_bottom_content">
-        <text class="bot_cont_text">评分</text>
-        <text class="bot_cont_text">{{bannerItem.star_rate}}分</text>
+<view>
+  <view class="recommed_container" data-fid="{{bannerItem.id}}" catchtap="navgToDetail" >
+    <image src="{{bannerItem.image_url}}" class="rec_cont_left"/>
+
+    <view class="rec_cont_right">
+      <text class="cont_right_title">{{bannerItem.name}}</text>
+
+      <view class="cont_right_money">
+        <text class="right_money_cur">¥ {{bannerItem.cur_price}}</text>
+        <text class="right_money_old">¥ {{bannerItem.price}}</text>
+      </view>
+
+      <view class="cont_right_bottom">
+        <view class="right_bottom_btn">已售{{bannerItem.sold_nums}}份</view>
+        <view class="right_bottom_content">
+          <text class="bot_cont_text">评分</text>
+          <text class="bot_cont_text">{{bannerItem.star_rate}}分</text>
+        </view>
       </view>
     </view>
   </view>

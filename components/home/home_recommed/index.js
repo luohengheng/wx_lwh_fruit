@@ -1,4 +1,3 @@
-// components/home/home_recommed/index.js
 Component({
   /**
    * 组件的属性列表
@@ -18,6 +17,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    navgToDetail: function(e) {
+      // console.log(e)
+      const { fid } = e.currentTarget.dataset
 
+      wx.navigateTo({
+        url: `/pages/f_detail/index?id=${fid}`,
+      })
+    }
   }
 })

@@ -1,4 +1,8 @@
 {
+  "navigationBarTitleText": "精选",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "onReachBottomDistance": 50,
   "usingComponents": {
     "l-home-message": "/components/home/home_message/index",
     "l-home-swiper": "/components/swipe/index",

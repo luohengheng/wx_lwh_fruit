@@ -1,0 +1,25 @@
+.fd_an_container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 20rpx;
+  border-top: 1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.an_con_name{
+  font-size: 26rpx;
+  color: #333333;
+}
+
+.an_con_dot{
+  font-size: 26rpx;
+  color: #666666;
+}
+
+.an_con_num{
+  width: 80%;
+  font-size: 26rpx;
+  color: #333333;
+  margin-left: 20rpx;
+}

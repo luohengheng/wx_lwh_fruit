@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-home-rec-item": "/components/home/home_recommed/index"
+  }
+}

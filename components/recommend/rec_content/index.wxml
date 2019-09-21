@@ -1,0 +1,15 @@
+<view class='rec_content_container'>
+  <scroll-view class="rec_content_left" scroll-y="true" scroll-with-animation="true">
+    <block wx:for="{{recList}}" wx:key="{{item.item.NAME}}">
+      <view class='rec_con_left_item {{index === cur && "rec_con_left_cur"}}'
+        data-cur-index="{{index}}" bindtap="changeItem">
+        {{item.typeName}}
+      </view>
+    </block>
+  </scroll-view>
+  <scroll-view class="rec_content_right" scroll-y="true" scroll-top="{{scrolltop}}">
+    <block wx:for="{{itemArr}}" wx:key="{{item.NAME + 1111}}">
+      <l-home-rec-item bannerItem="{{item}}"/>
+    </block>
+  </scroll-view>
+</view>

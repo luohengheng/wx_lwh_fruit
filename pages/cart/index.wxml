@@ -1,0 +1,22 @@
+<view class="cart-container">
+  <view class="empty-data" wx:if="{{cartArr.length === 0}}">
+    <text>暂无数据</text>
+  </view>
+
+  <scroll-view scroll-y="true" class="cart-cont-scroll">
+      <block wx:for="{{cartArr}}" wx:key="{{index}}">
+        <l-cart-item itemObj="{{item}}" itemIndex="{{index}}" bind:cartFreshEvent="initData"/>
+      </block>
+  </scroll-view>
+  
+  <view class="cart-cont-bot">
+    <view class="cc-bot-sel" bindtap="allSel">
+      <image class="bot-sel-img" src="{{isAllSel ? '/images/gou-red.png' : '/images/gou.png'}}"/>
+      <text class="bot-sel-text">全选</text>
+    </view>
+
+    <text class="cc-bot-price">总价:  {{allMoney}} 元</text>
+
+    <view class="cc-bot-sumbmit" bindtap="subOrder">提交订单 ( {{allNum}} )</view>
+  </view>
+</view>

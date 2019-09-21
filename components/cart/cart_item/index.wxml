@@ -1,0 +1,25 @@
+<view class="cart-item-container {{isDel && 'item_del_show'}}" bindtouchstart="touchS" bindtouchend="touchE">
+  <view class="citem-cont-left" catchtap="changeState">
+    <image class="citem-cont-img" src="{{itemObj.state ? './images/gou-red.png' : './images/gou.png'}}"/>
+  </view>
+  
+  <view class="citem-cont-right">
+
+    <view class="cont-r-left" catchtap="toFDetail">
+      <image class="r-left-img" src="{{itemObj.image_url}}"/>
+      <text class="r-left-intr">{{itemObj.introduce}}</text>
+    </view>
+
+    <view class="cont-r-right">
+      <text class="r-right-content">{{itemObj.content}}</text>
+
+      <view class="cont-rr-btns">
+        <view class="cont-rr-del" catchtap="delNum">-</view>
+        <text class="cont-rr-num">{{itemObj.count}}</text>
+        <view class="cont-rr-add" catchtap="addNum">+</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="item_del" catchtap="del_item">删除</view>
+</view>

@@ -1,0 +1,20 @@
+<view class="fdetail_container">
+  <image class="fdetail_cont_img" src="{{fDetail.image_url}}"/>
+  <text class="fdetail_cont_content">{{fDetail.content}}</text>
+  <view class="fdetail_cont_price">
+    <text class="fd_price_cur">当前劲爆价: {{fDetail.cur_price}} / 元</text>
+    <text class="fd_price_total">历史高价: {{fDetail.price}} / 元</text>
+  </view>
+
+  <l-fdetail-add bind:showNums="popBottomShow" num="{{num}}"/>
+  <l-fdetail-show wx:if="{{isShow}}" class="l-fdetail-show" bind:closePopEvent="closePop" bind:fruitNumEvent="getFruitNum"/>
+
+  <view class="fdetail_cont_buts">
+    <view class="fdetail_cont_toBuy" bindtap="toBuy">
+      <image class="cont_toBuy_icon" src="/images/icon-cart.png"></image>
+      <text class="cont_toBuy_num" wx:if="{{buyCount > 0}}">{{buyCount}}</text>
+    </view>
+    <view class="fdetail_cont_buy" bindtap="addBuy">加入购物车</view>
+  </view>
+  
+</view>

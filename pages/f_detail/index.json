@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-fdetail-add": "/components/f_detail/add_num/index",
+    "l-fdetail-show": "/components/f_detail/show_num/index"
+  }
+}

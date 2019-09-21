@@ -1,0 +1,11 @@
+<view class="me_container">
+  <view class="me_cont_header">
+    <button wx:if="{{!hasUser && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="cont_header_btn">获取个人资料</button>
+    <block wx:else class="cont_header_info">
+      <image src="{{userInfo.avatarUrl}}" class="cont_header_img"/>
+      <text class="cont_header_text">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  
+</view>

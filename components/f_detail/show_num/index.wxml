@@ -1,0 +1,17 @@
+<view class="show_num_container" catchtap="closeShow" data-self="_self">
+  <view class="sn_bottom">
+    <view class="sn_bot_content">
+      <text class="bot_cont_left">当前数量: {{num}}</text>
+
+      <view class="bot_cont_right">
+        <view class="cont_r_bt1" catchtap="delNum">-</view>
+        <text class="cont_r_text">{{num}}</text>
+        <view class="cont_r_bt2" catchtap="addNum">+</view>
+      </view>
+
+      <view class="bot_cont_close" catchtap="closeShow" data-self="_self">x</view>
+    </view>
+
+    <button class="sn_bot_btn" catchtap="getNum">确定</button>
+  </view>
+</view>

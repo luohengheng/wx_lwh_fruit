@@ -1,0 +1,31 @@
+.rec_content_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.rec_content_left{
+  width: 180rpx;
+  height: 100%;
+  background-color: #f1f1f1
+}
+
+.rec_con_left_item{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: transparent;
+  color: #666666;
+  border-bottom: 1rpx solid white;
+}
+
+.rec_con_left_cur{
+  background-color: white;
+  color: black
+}
+
+.rec_content_right{
+  flex: 1;
+  overflow: hidden;
+}

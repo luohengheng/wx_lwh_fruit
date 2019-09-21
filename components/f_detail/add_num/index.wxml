@@ -1,0 +1,5 @@
+<view class="fd_an_container">
+  <text class="an_con_name">数量: </text>
+  <text class="an_con_num">{{num}}</text>
+  <text class="an_con_dot" bindtap="showNums">...</text>
+</view>

@@ -1,0 +1,5 @@
+<view class="rec_header_container">
+  <image src='./images/recommend_header.jpg' class="rec_header_img"/>
+  <view class="rec_header_word">欢迎光临</view>
+  <view class="rec_header_clock"></view>
+</view>

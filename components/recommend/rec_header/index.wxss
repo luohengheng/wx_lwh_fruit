@@ -1,0 +1,25 @@
+.rec_header_container{
+  width: 100%;
+  height: 220rpx;
+  background: -webkit-linear-gradient(top, rgba(0,175,180, 1), rgba(0,175,180, 0.5));
+  display: flex;
+  align-items: center;
+}
+
+.rec_header_img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left: 20rpx;
+}
+
+.rec_header_word{
+  flex: 1;
+  padding: 25rpx 20rpx;
+}
+
+.rec_header_clock{
+  width: 180rpx;
+  height: 100%;
+}
+

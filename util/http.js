@@ -1,6 +1,9 @@
 // import { config } from '../config'
 const config = require('../config.js')
 
+const sucCode = 'S10000';
+const logoutCode = 'E99999';
+
 class HTTP {
 
   request({ url = '/', method = 'GET', data = {}, header = {}}) {
@@ -15,11 +18,19 @@ class HTTP {
         },
         success: res => {
           const code = res.statusCode.toString()
+
           if (code.startsWith('2')) {
-            const {data = {}} = res.data
-            resolve(data)
+            const {data = {}, code=''} = res.data
+
+            if (code === sucCode) {
+              resolve(data)
+            } else if (code === logoutCode) {
+              this._clearToken(res)
+            }
+            
           } else {
             this._error_show('服务器请求失败')
+            reject(res)
           }
         },
         fail: res => {
@@ -36,6 +47,19 @@ class HTTP {
       icon: 'none',
       duration: 2000
     })
+  }
+
+  _clearToken(res) {
+    this._error_show('token失效，请重新登录')
+    wx.removeStorage({
+      key: 'token',
+      success: function(res) {},
+    })
+
+    wx.switchTab({
+      url: '/pages/me/index',
+    })
+    reject(res)
   }
 }
 

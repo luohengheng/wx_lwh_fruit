@@ -1,3 +1,5 @@
+let OtherModel = require('../../models/other.js')
+const otherModel = new OtherModel()
 const app = getApp()
 
 Page({
@@ -83,6 +85,22 @@ Page({
 
 
   getUserInfo: function(e) {
+    wx.login({
+      success: async res => {
+        const {code} = res
+        const {token} = await otherModel.login({code})
+
+        token && wx.setStorage({
+          key: 'token',
+          data: token,
+        })
+      },fail: _ => {
+        wx.showToast({
+          title: '登录失败',
+        })
+      }
+    })
+
     this.setData({
       hasUser: true,
       userInfo: e.detail.userInfo

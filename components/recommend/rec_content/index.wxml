@@ -8,7 +8,7 @@
     </block>
   </scroll-view>
   <scroll-view class="rec_content_right" scroll-y="true" scroll-top="{{scrolltop}}">
-    <block wx:for="{{itemArr}}" wx:key="{{item.NAME + 1111}}">
+    <block wx:for="{{itemArr}}" wx:key="{{index}}">
       <l-home-rec-item bannerItem="{{item}}"/>
     </block>
   </scroll-view>

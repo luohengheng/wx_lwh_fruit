@@ -104,7 +104,6 @@ Component({
         startX,
         startY
       })
-      // console.log(e)
     },
 
     touchE(e) {
@@ -117,7 +116,6 @@ Component({
       this.setData({
         isDel
       })
-      // console.log(e)
     },
 
     del_item() {

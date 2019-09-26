@@ -18,7 +18,6 @@ Component({
    */
   methods: {
     navgToDetail: function(e) {
-      // console.log(e)
       const { fid } = e.currentTarget.dataset
 
       wx.navigateTo({

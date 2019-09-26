@@ -76,6 +76,7 @@ Page({
         this.setData({
           isAllSel: !isAllSel,
           cartArr: data,
+          allNum: !isAllSel ? data.length : 0,
           allMoney
         })
       },

@@ -42,7 +42,6 @@ Page({
 
   getFruitNum(e) {
     const {num} = e.detail
-    console.log(num)
     this.setData({
       isShow: false,
       num
@@ -59,8 +58,7 @@ Page({
       key: 'buyCartArr',
       success:(res) => {
         const { data } = res
-        console.log(res)
-        const fIndex = data.findIndex(i => i.id === fDetail.id)
+        const fIndex = data.findIndex(i => i.fid === fDetail.fid)
         if (fIndex !== -1) {
           //todo storage中存在该商品
           //todo 这里其实有个坑，如果该水果当前价格变动，不单单只是修改数量，同时商品的其他信息都需要改动

@@ -25,7 +25,9 @@ class HTTP {
             if (code === sucCode) {
               resolve(data)
             } else if (code === logoutCode) {
-              this._clearToken(res)
+              this._clearToken()
+              //todo 有个问题
+              // reject(res)
             }
             
           } else {
@@ -49,7 +51,7 @@ class HTTP {
     })
   }
 
-  _clearToken(res) {
+  _clearToken() {
     this._error_show('token失效，请重新登录')
     wx.removeStorage({
       key: 'token',
@@ -59,7 +61,6 @@ class HTTP {
     wx.switchTab({
       url: '/pages/me/index',
     })
-    reject(res)
   }
 }
 

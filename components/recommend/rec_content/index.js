@@ -49,7 +49,6 @@ Component({
     },
 
     changeItem: function(e) {
-      // console.log(e)
       const { curIndex } = e.currentTarget.dataset
       this.setData({ 
         cur: curIndex,

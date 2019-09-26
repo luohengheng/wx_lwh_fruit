@@ -1,5 +1,5 @@
 <view>
-  <view class="recommed_container" data-fid="{{bannerItem.id}}" catchtap="navgToDetail" >
+  <view class="recommed_container" data-fid="{{bannerItem.fid}}" catchtap="navgToDetail" >
     <image src="{{bannerItem.image_url}}" class="rec_cont_left"/>
 
     <view class="rec_cont_right">

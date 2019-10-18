@@ -28,7 +28,7 @@ class HomeModel extends HTTP {
   }
 
   async getHomeBanner() {
-    const { data = [] } = await this.request({
+    let { data = [] } = await this.request({
       url: '/getHomeBanner',
       method: 'POST',
       data: {
@@ -36,7 +36,13 @@ class HomeModel extends HTTP {
         pageNum: 6
       }
     })
-  
+
+    data = data.map(i => {
+      return {
+        ...i,
+        image_url: `${config.base_image_url}/${i.md5_name}`
+      }
+    })
     return data
   }
 }

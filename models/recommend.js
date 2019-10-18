@@ -4,9 +4,16 @@ const config = require('../config.js')
 class RecommendModal extends HTTP{
 
   async getRecommendList() {
-    const { data = [] } = await this.request({
+    let { data = [] } = await this.request({
       url: '/getRecommedList',
       method: 'POST',
+    })
+
+    data = data.map(i => {
+      return {
+        ...i,
+        image_url: `${config.base_image_url}/${i.md5_name}`
+      }
     })
 
     const typeList = []
@@ -26,12 +33,18 @@ class RecommendModal extends HTTP{
   }
 
   async getFruitDetail(params) {
-    const { data = [] } = await this.request({
+    let { data = [] } = await this.request({
       url: '/getFruitDetail',
       method: 'POST',
       data: params
     })
 
+    data = data.map(i => {
+      return {
+        ...i,
+        image_url: `${config.base_image_url}/${i.md5_name}`
+      }
+    })
     return data
   }
 }

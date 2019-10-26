@@ -12,7 +12,6 @@ class HomeModel extends HTTP {
     return data
   }
 
-
   async getHomeSwipe() {
     let { data = [] } = await this.request({
       url: '/getHomeShuffle',

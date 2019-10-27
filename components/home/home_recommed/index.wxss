@@ -1,14 +1,92 @@
-.recommed_container{
-  width: 100%;
+
+.recomd-wrp {
   display: flex;
+}
+
+.pro-item{
+  width: 100%;
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
   border-top: 1rpx solid #99999934; 
   border-bottom: 1rpx solid #99999934; 
 }
 
-.rec_cont_left{
-  width: 250rpx;
-  height: 250rpx;
+.pro-item-img {
+  position: relative;
+  width: 100%;
+  height: 374rpx;
+  overflow: hidden;
+  background-color: #ccc;
 }
+
+.sale-out {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #ccc;
+  background-color: rgba(216, 211, 211, 0.5);
+  font-size: 40rpx;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.pro-item-img .img {
+  max-width: 100%;
+}
+
+.pro-info {
+  padding: 20rpx 32rpx;
+
+}
+
+.go-buy {
+  margin: 20rpx 0;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro-name {
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 28rpx;
+  color: #1C1717;
+  font-family: "PingFangSC-Light";
+}
+
+.oneline-elips {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pro-price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.cur-price{
+  font-size: 36rpx;
+  color: #000;
+  margin-right: 20rpx;
+  font-family: "Futura-Medium";
+}
+
+.line-price {
+  font-size: 24rpx;
+  color: #999999;
+  text-decoration: line-through;
+  font-family: 'FuturaLT-Light';
+}
+
+
+
 
 .rec_cont_right{
   display: flex;
@@ -24,22 +102,7 @@
   padding-left: 20rpx;
 }
 
-.cont_right_money{
-  display: flex;
-  flex-direction: row;
-}
 
-.right_money_cur{
-  font-size: 26rpx;
-  color: red;
-  margin-right: 20rpx;
-}
-
-.right_money_old{
-  font-size: 24rpx;
-  color: #999999;
-  text-decoration: line-through;
-}
 
 .cont_right_bottom{
   display: flex;

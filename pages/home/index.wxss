@@ -13,9 +13,13 @@
 
 .home_recommend_scroll{
   width: 100%;
-  height: 643rpx;
+  /* height: calc(100% - 372rpx); */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .home_recommend_list{
-  width: 100%;
+  width:50%;
+  /* background: red; */
 }

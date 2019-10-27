@@ -4,8 +4,10 @@ const config = require('../config.js')
 
 class HomeModel extends HTTP {
 
+
+
   async getHomeMsg() {
-    const {data = []} = await this.request({
+    const { data = [] } = await this.request({
       url: '/getHomeInfo',
       method: 'POST',
     })

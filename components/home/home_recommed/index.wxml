@@ -1,7 +1,31 @@
-<view>
+<!-- <view class="recomd-wrp"> -->
+<view class="pro-item " data-fid="{{bannerItem.fid}}" catchtap="navgToDetail">
+  <view class="pro-item-img">
+    <!-- <text class="sale-out" wx:if="{{!bannerItem.storeNum}}">已售罄</text> -->
+    <image src="{{bannerItem.image_url}}" class="img" />
+  </view>
+  <view class="pro-info">
+    <view class="pro-name oneline-elips">怎么能这样颜值低法拉盛江东父老{{bannerItem.name}}</view>
+    <view class="pro-price">
+      <text class="cur-price">¥ {{bannerItem.cur_price}}</text>
+      <text class="line-price">¥ {{bannerItem.price}}</text>
+    </view>
+    <view class="go-buy flex-box">
+      <button type="default" size="mini">立即购买</button>
+    </view>
+    <!-- <view class="cont_right_bottom">
+        <view class="right_bottom_btn">已售{{bannerItem.sold_nums}}份</view>
+        <view class="right_bottom_content">
+          <text class="bot_cont_text">评分</text>
+          <text class="bot_cont_text">{{bannerItem.star_rate}}分</text>
+        </view>
+      </view> -->
+  </view>
+</view>
+<!-- </view> -->
+<!-- <view class="recomd-wrp">
   <view class="recommed_container" data-fid="{{bannerItem.fid}}" catchtap="navgToDetail" >
     <image src="{{bannerItem.image_url}}" class="rec_cont_left"/>
-
     <view class="rec_cont_right">
       <text class="cont_right_title">{{bannerItem.name}}</text>
 
@@ -19,4 +43,4 @@
       </view>
     </view>
   </view>
-</view>
+</view> -->

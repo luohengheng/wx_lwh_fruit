@@ -6,3 +6,11 @@ page {
   /* align-items: center; */
   box-sizing: border-box;
 } 
+
+.oneline-elips {
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}

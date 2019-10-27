@@ -1,9 +1,10 @@
 <l-home-message class="home_message" msg="{{msgInfo}}"/>
 <l-home-swiper swiperArr="{{swiperArr}}" isShow="{{bannerArr.length > 0}}"/>
 <text class="home_recommend_text">特别推荐</text>
-<scroll-view scroll-y="true" class="home_recommend_scroll">
-  <view wx:for="{{bannerArr}}" wx:key="{{item.id}}" class="home_recommend_list">
-    <l-home-rec-item bannerItem="{{item}}" />
-  </view>
-</scroll-view>
+
+<view scroll-y="true" class="home_recommend_scroll">
+  <block wx:for="{{bannerArr}}" wx:key="{{item.id}}">
+    <l-home-rec-item bannerItem="{{item}}"  class="home_recommend_list"/>
+  </block>
+</view>
 

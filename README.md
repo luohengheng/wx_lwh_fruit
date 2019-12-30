@@ -23,6 +23,7 @@
     1. 微信信息持久化
     
 ## 效果
+![img](https://github.com/luohengheng/wx_lwh_fruit/blob/master/readme/1.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/blob/master/readme/1.png)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/blob/master/readme/2.png)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/blob/master/readme/3.png)

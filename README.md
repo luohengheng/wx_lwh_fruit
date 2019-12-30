@@ -25,9 +25,6 @@
 ## 效果
 
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gou-red.png)
-![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/2.gif)
-![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/3.gif)
-![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/4.gif)
 
 ## 其他
 1. 网络数据请求二次分装， 使用async await

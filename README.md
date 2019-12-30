@@ -23,10 +23,10 @@
     1. 微信信息持久化
     
 ## 效果
-![img](https://github.com/luohengheng/wx_lwh_fruit/readme/1.gif)
-![img](https://github.com/luohengheng/wx_lwh_fruit/readme/2.gif)
-![img](https://github.com/luohengheng/wx_lwh_fruit/readme/3.gif)
-![img](https://github.com/luohengheng/wx_lwh_fruit/readme/4.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/readme/1.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/readme/2.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/readme/3.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/readme/4.gif)
 
 ## 其他
 1. 网络数据请求二次分装， 使用async await

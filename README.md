@@ -23,7 +23,7 @@
     1. 微信信息持久化
     
 ## 效果
-![img](http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=gif&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&hd=undefined&latest=undefined&copyright=undefined&cs=1708456121,4044353785&os=797548221,1281624786&simid=4217170431,728251388&pn=1&rn=1&di=49060&ln=1811&fr=&fmq=1577694902186_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F357d23d074c2954d568d1a6f86a5be09d190a45116e95-0jh9Pg_fw658&rpstart=0&rpnum=0&adpicid=0&force=undefined)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/1.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/2.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/3.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/4.gif)

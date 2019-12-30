@@ -24,7 +24,7 @@
     
 ## 效果
 
-![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/1.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gou-red.png)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/2.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/3.gif)
 ![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/4.gif)

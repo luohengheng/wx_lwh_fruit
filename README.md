@@ -21,6 +21,12 @@
 5. 个人信息页
   1. 获取个人微信信息
     1. 微信信息持久化
+    
+## 效果
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/1.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/2.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/3.gif)
+![img](https://github.com/luohengheng/wx_lwh_fruit/tree/master/images/gif/4.gif)
 
 ## 其他
 1. 网络数据请求二次分装， 使用async await
